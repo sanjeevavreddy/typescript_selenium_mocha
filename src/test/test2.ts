@@ -1,4 +1,4 @@
-import { Builder, By, until, WebDriver } from 'selenium-webdriver';
+import { Builder, By, WebDriver } from 'selenium-webdriver';
 
 describe('Test2', function () {
 
