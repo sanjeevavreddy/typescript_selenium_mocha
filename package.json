@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "test1": "mocha -r ts-node/register --no-timeouts --reporter=mochawesome --reporter-options inline=true,enableCode=true,reportDir=C:/Users/sanjeeva/Desktop/typescript_selenium/MochawesomeReport src/**/*.ts",
-    "test": "mocha -r ts-node/register --no-timeouts --reporter=mochawesome --reporter-options inline=true,enableCode=true,reportDir=C:/Users/sanjeeva/Desktop/typescript_selenium/MochawesomeReport"
+    "test-parallel": "mocha -r ts-node/register --parallel --no-timeouts --reporter=mochawesome --reporter-options inline=true,enableCode=true,reportDir=C:/Users/sanjeeva/Desktop/typescript_selenium_mocha/MochawesomeReport src/**/*.ts",
+    "testAll": "mocha -r ts-node/register --no-timeouts --reporter=mochawesome --reporter-options inline=true,enableCode=true,reportDir=C:/Users/sanjeeva/Desktop/typescript_selenium_mocha/MochawesomeReport src/**/*.ts",
+    "test": "mocha -r ts-node/register --no-timeouts --reporter=mochawesome --reporter-options inline=true,enableCode=true,reportDir=C:/Users/sanjeeva/Desktop/typescript_selenium_mocha/MochawesomeReport"
   }
 }
