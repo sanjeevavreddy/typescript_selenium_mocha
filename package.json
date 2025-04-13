@@ -2,12 +2,18 @@
   "scripts": {
     "test-parallel": "mocha -r ts-node/register --parallel --no-timeouts --reporter=mochawesome --reporter-options inline=true,enableCode=true,reportDir=C:/Users/sanjeeva/Desktop/typescript_selenium_mocha/MochawesomeReport src/**/*.ts",
     "testAll": "mocha -r ts-node/register --no-timeouts --reporter=mochawesome --reporter-options inline=true,enableCode=true,reportDir=C:/Users/sanjeeva/Desktop/typescript_selenium_mocha/MochawesomeReport src/**/*.ts",
-    "test": "mocha -r ts-node/register --no-timeouts --reporter=mochawesome --reporter-options inline=true,enableCode=true,reportDir=C:/Users/sanjeeva/Desktop/typescript_selenium_mocha/MochawesomeReport"
+    "test": "mocha -r ts-node/register --no-timeouts --reporter=mochawesome --reporter-options inline=true,enableCode=true"
   },
   "dependencies": {
-    "@types/mocha": "^10.0.7",
-    "@types/selenium-webdriver": "^4.1.24",
-    "selenium-webdriver": "^4.22.0",
-    "xlsx": "^0.18.5"
+    "@types/mocha": "latest",
+    "@types/selenium-webdriver": "latest",
+    "selenium-webdriver": "latest",
+    "xlsx": "latest"
+  },
+ "devDependencies": {
+    "mocha": "latest",
+    "ts-node": "latest",
+    "typescript": "latest",
+    "mochawesome": "latest"
   }
 }

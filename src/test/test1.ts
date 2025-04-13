@@ -1,21 +1,24 @@
-import { Builder, By, WebDriver } from 'selenium-webdriver';
+import { Builder, By, until, WebDriver } from 'selenium-webdriver';
 
 describe('Test1', function () {
 
     it('step1', async function () {
-        const gridUrl = 'http://localhost:4444/wd/hub';
+        // const gridUrl = 'http://localhost:4444/wd/hub';
 
-        const capabilities = {
-            browserName: 'chrome',
-        };
+        // const capabilities = {
+        //     browserName: 'chrome',
+        // };
 
-        const driver: WebDriver = await new Builder().usingServer(gridUrl).withCapabilities(capabilities).build()
+        // const driver: WebDriver = await new Builder().usingServer(gridUrl).withCapabilities(capabilities).build()
+        const driver = await new Builder().forBrowser('chrome').build();
+
 
 
         await driver.manage().setTimeouts({ script: 10000, implicit: 20000, pageLoad: 30000 })
 
 
         await driver.get('https://www.flipkart.com');
+        
 
         await (await driver.findElement(By.xpath(`//input[@title="Search for Products, Brands and More"]`))).sendKeys("iphone 15")
 
